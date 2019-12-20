@@ -2,6 +2,8 @@ import numpy as np
 import skfuzzy as fuzz
 from skfuzzy import control as ctrl
 
+#on peut pas utiliser trampf car il nous manque une valeur pour le trapeze, jai tout mis en trimf du coup FONCTION TRIANGULAIRE
+
 error = ctrl.Antecedent(np.arange(-4, 4, 1), 'error')
 errordot = ctrl.Antecedent(np.arange(-10, 10, 1), 'errordot')
 percent = ctrl.Consequent(np.arange(-101, 101, 1), 'percent')
